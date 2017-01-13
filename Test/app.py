@@ -51,4 +51,4 @@ def form():
         conn.close()
 
 if __name__ == "__main__":
-    app.run(port=5002)
+    app.run()
