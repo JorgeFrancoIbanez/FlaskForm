@@ -1,0 +1,9 @@
+---
+#    for private repositories 
+#    - name: Get updated files from git repository
+#      git: repo=https://{{ githubuser }}:{{ githubpassword }}@github.com/JorgeFrancoIbanez/FlaskForm.git dest=/var/www/html/FlaskForm/
+ 
+    - name: Get updated files from git repository
+      git:
+        repo: https://github.com/JorgeFrancoIbanez/FlaskForm.git
+        dest: /var/www/html/FlaskForm/

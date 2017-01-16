@@ -1,0 +1,25 @@
+---
+
+    - name: Apache enabled mod_rewrite
+      apache2_module: name=rewrite state=present
+
+    - name: Apache enabled mod_wsgi
+      apache2_module: name=wsgi state=present
+
+    - name: Apache wsgi Config
+      copy: src=../conf/flask.wsgi dest=/var/www/html/FlaskForm/flaskform.wsgi
+
+    - name: Apache Set a Virtual Host
+      copy: src=../conf/virthost.conf dest=/etc/apache2/sites-available/FlaskForm.conf
+
+    - name: Apache a2ensite FlaskForm
+      command: a2ensite FlaskForm
+
+
+    - name: Delete index.html by default
+      file: state=absent path=/var/www/html/index.html
+
+    - service:
+        name: apache2
+        state: restarted
+

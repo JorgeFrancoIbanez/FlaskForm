@@ -1,0 +1,29 @@
+---
+ubuntu_required_packages: 
+  - libpq-dev
+  - libmysqlclient-dev
+  - libxml2-dev
+  - libjpeg62
+  - libjpeg62-dev
+  - libfreetype6
+  - libfreetype6-dev
+  - zlib1g-dev
+  - mysql-client
+  - python-dev
+  - python-setuptools
+  - python-imaging
+  - python-mysqldb
+  - python-psycopg2
+  - git-core
+  - libapache2-mod-wsgi
+  - php5
+  - libapache2-mod-php5
+  - php5-mcrypt
+  - apache2
+  - ufw
+
+pip_required_libraries:
+  - virtualenv
+  - flask
+  - flask-mysql
+

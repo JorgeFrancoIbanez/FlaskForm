@@ -1,0 +1,19 @@
+---
+    - name: Update server
+      apt: update_cache=yes
+   
+    - name: Install common packages needed for python application development
+      action: apt pkg={{ item }} state=installed
+      with_items:
+        - "{{ ubuntu_required_packages }}"
+
+    - include: gitclone.yml
+    - include: php.yml   
+    - include: apache.yml
+    - include: mysql.yml
+    - include: pip.yml
+    
+    - name: Install libraries with pip
+      action: pip name={{ item }} state=present
+      with_items:
+        - "{{ pip_requerid_libraries }}"
