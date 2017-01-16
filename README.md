@@ -1,7 +1,10 @@
-# FlaskForm
+#FlaskForm
 Deploying a Flask application ansible 
 
-#basic usage:
-something here.
+##Basic usage:
+If you are new with python and or web applications I invite you to see the Wiki. 
 
-Go to wiki: https://github.com/JorgeFrancoIbanez/FlaskForm/wiki
+https://github.com/JorgeFrancoIbanez/FlaskForm/wiki
+
+##Ansible
+    
