@@ -1,12 +1,12 @@
-#FlaskForm
+# FlaskForm
 Deploying a Flask application ansible 
 
-##Basic usage:
+## Basic usage:
 If you are new with python and or web applications I invite you to see the Wiki. 
 
 https://github.com/JorgeFrancoIbanez/FlaskForm/wiki
 
-##Ansible - Deploy the server
+## Ansible - Deploy the server
 
 To deploy your server you need to set the server IP into "**/etc/ansible/hosts**" as:
 
